@@ -1,0 +1,112 @@
+.menu {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 2rem 0;
+    transition: all 0.3s ease;
+}
+
+.menu.sticky {
+    padding: 1rem 0;
+    background-color: #333;
+
+
+}
+
+.menu.sticky a {
+    color: #fff;
+}
+
+.menu .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .logo img {
+    display: block;
+    width: 5rem;
+
+
+}
+
+.menu .menu-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 30rem;
+    background-color: rgb(36, 36, 36);
+    display: block;
+    margin-top: 0;
+    padding: 3rem 0;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+@media (min-width: 768px) { 
+    .menu .menu-list {
+        display: inline-flex;
+        margin: 0;
+    }
+}
+.menu .menu-list.active {
+    left: 0%;
+    
+}
+.menu-list li {
+    margin-top: 3.5rem;
+}
+@media (min-width: 768px) { 
+    .menu-list li {
+        list-style: none;
+        transition: all 300ms;
+    }
+}
+
+.menu-list li:hover {
+    transform: scale(1.2, 1.2);
+
+}
+
+.menu-list li a {
+    font-size: 1.5rem;
+
+}
+@media (min-width: 768px) { 
+    .menu-list li a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    }
+}
+
+.menu-list li a:hover {
+    color: #fff;
+}
+.icon {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.icon.hide{
+    display: none;
+}
+
+@media (min-width: 768px) { 
+    .icon {
+        
+        display: none;
+    }
+
+}
+
+/* .icon.cancel-btn {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}  */
