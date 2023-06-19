@@ -16,7 +16,7 @@ cancelBtn.onclick = () => {
 }
 
 window.onscroll = () => {
-    this.scrollY > 350 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    this.scrollY > 200 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 
 /*================== Scroll Reveal Animation =================*/ 
