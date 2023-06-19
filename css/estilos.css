@@ -19,21 +19,14 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
 body {
-    width: 100%;
-    max-width: 100vw;
-
     background-color: var(---oscuro);
     font-family: var(--fonts-primary);
     font-size: 1.6rem;
