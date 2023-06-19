@@ -19,6 +19,9 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -28,12 +31,14 @@ html {
 }
 
 body {
+    width: 100%;
+    max-width: 100vw;
+
     background-color: var(---oscuro);
     font-family: var(--fonts-primary);
     font-size: 1.6rem;
     line-height: 1.5;
-    overflow-x: hidden;
-    overflow-y: scroll;
+
 }
 
 /* GLOBALES PARA EL PROYECTO */
@@ -80,9 +85,9 @@ a {
     text-align: center;
 }
 
-.mt-5 {
+/* .mt-5 {
     margin-top: 6rem;
-}
+} */
 
 
 /* DEGRADADOS */
@@ -98,10 +103,10 @@ a {
 
 
 .menu {
+    width: 100%;
     position: fixed;
     top: 0;
     z-index: 5;
-    width: 100%;
     padding: 1rem 0;
     transition: all 0.3s ease;
 }
