@@ -47,7 +47,7 @@ h2,
 h3 {
     font-weight: 900;
     font-family: var(---fuenteDos);
-    margin: calc(var(---separar) / 2) 0;
+   
 }
 
 h1 {
@@ -78,9 +78,9 @@ a {
     text-align: center;
 }
 
-/* .mt-5 {
+.mt-5 {
     margin-top: 6rem;
-} */
+}
 
 
 /* DEGRADADOS */
